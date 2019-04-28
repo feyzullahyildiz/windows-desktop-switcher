@@ -151,14 +151,14 @@ switchDesktopToRight()
 {
     global CurrentDesktop, DesktopCount
     updateGlobalVariables()
-    _switchDesktopToTarget(CurrentDesktop == DesktopCount ? 1 : CurrentDesktop + 1)
+    _switchDesktopToTarget(CurrentDesktop + 1)
 }
 
 switchDesktopToLeft()
 {
     global CurrentDesktop, DesktopCount
     updateGlobalVariables()
-    _switchDesktopToTarget(CurrentDesktop == 1 ? DesktopCount : CurrentDesktop - 1)
+    _switchDesktopToTarget(CurrentDesktop - 1)
 }
 
 focusTheForemostWindow(targetDesktop) 
